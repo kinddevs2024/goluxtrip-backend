@@ -4,7 +4,7 @@ const JWT_SECRET = process.env.JWT_SECRET || "supersecret123";
 
 export default function handler(req, res) {
   // CORS setup
-  res.setHeader("Access-Control-Allow-Credentials", true);
+  
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET,OPTIONS,PATCH,DELETE,POST,PUT");
   res.setHeader("Access-Control-Allow-Headers", "*");

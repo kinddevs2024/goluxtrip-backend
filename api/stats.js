@@ -2,7 +2,7 @@ import dbConnect from "../lib/mongoose.js";
 import Stat from "../lib/models/Stat.js";
 
 export default async function handler(req, res) {
-  res.setHeader("Access-Control-Allow-Credentials", true);
+  
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET,OPTIONS,PATCH,DELETE,POST,PUT");
   res.setHeader("Access-Control-Allow-Headers", "*");
