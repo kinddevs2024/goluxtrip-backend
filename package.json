@@ -1,0 +1,28 @@
+{
+  "name": "goluxtripbackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinddevs2024/goluxtrip-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/kinddevs2024/goluxtrip-backend/issues"
+  },
+  "homepage": "https://github.com/kinddevs2024/goluxtrip-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.7.4",
+    "nodemailer": "^9.0.3",
+    "zod": "^4.4.3"
+  }
+}
