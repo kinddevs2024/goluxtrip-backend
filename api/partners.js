@@ -1,6 +1,14 @@
 import dbConnect from "../lib/mongoose.js";
 import Partner from "../lib/models/Partner.js";
 
+export const config = {
+  api: {
+    bodyParser: {
+      sizeLimit: '10mb',
+    },
+  },
+};
+
 export default async function handler(req, res) {
   
   res.setHeader("Access-Control-Allow-Origin", "*");
