@@ -21,10 +21,10 @@ export default async function handler(req, res) {
     if (!token) return res.status(401).json({ message: "Unauthorized" });
 
     if (req.method === "POST" || req.method === "PUT") {
-      const { key, text_en, text_ru, text_uz } = req.body;
+      const { key, text_en, text_ru, text_uz, image } = req.body;
       const updated = await Content.findOneAndUpdate(
         { key },
-        { text_en, text_ru, text_uz },
+        { text_en, text_ru, text_uz, image },
         { new: true, upsert: true }
       );
       return res.status(200).json(updated);
